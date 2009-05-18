@@ -11,6 +11,7 @@ Summary:    Partial dumping of data structures, optimized for argument
 Url:        http://search.cpan.org/dist/%{module}
 Source:     http://www.cpan.org/modules/by-module/Devel/%{module}-%{version}.tar.gz
 BuildRequires: perl(Mouse)
+BuildRequires: perl(Any::Moose)
 BuildRequires: perl(Scalar::Util)
 BuildRequires: perl(Sub::Exporter)
 BuildRequires: perl(Test::Warn)
