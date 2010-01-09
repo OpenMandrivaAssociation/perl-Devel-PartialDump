@@ -11,13 +11,13 @@ Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Devel/%{upstream_name}-%{upstream_version}.tar.gz
 
-BuildRequires: perl(Mouse)
-BuildRequires: perl(Any::Moose)
+BuildRequires: perl(Moose)
 BuildRequires: perl(Scalar::Util)
 BuildRequires: perl(Sub::Exporter)
 BuildRequires: perl(Test::Warn)
 BuildRequires: perl(Test::use::ok)
 BuildRequires: perl(namespace::clean)
+
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
@@ -37,7 +37,7 @@ more useful for diagnostics warnings than
 %make
 
 %check
-make test
+%make test
 
 %install
 rm -rf %buildroot
