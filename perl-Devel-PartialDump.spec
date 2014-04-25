@@ -13,6 +13,7 @@ Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Devel/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
+BuildRequires: perl(Class::Tiny)
 BuildRequires:	perl(Moose)
 BuildRequires:	perl(Scalar::Util)
 BuildRequires:	perl(Sub::Exporter)
