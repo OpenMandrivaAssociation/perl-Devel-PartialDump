@@ -1,15 +1,13 @@
 %define upstream_name    Devel-PartialDump
-%define upstream_version 0.20
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.20
+Release:	2
 
 Summary:	Partial dumping of data structures, optimized for argument
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/moose/Devel-PartialDump
-Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/Devel-PartialDump-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/Devel-PartialDump-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -31,7 +29,7 @@ more useful for diagnostics warnings than
 	warn Dumper(@stuff);
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -72,9 +70,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 0.90.0-1mdv2010.0
 + Revision: 403102
-- rebuild using %%perl_convert_version
-
-* Wed Jul 01 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.09-1mdv2010.0
+- rebuild using %0.20 Wed Jul 01 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.09-1mdv2010.0
 + Revision: 391183
 - update to new version 0.09
 
