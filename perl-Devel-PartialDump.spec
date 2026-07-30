@@ -2,7 +2,7 @@
 %define upstream_version 0.20
 Name:		perl-%{upstream_name}
 Version:	0.20
-Release:	2
+Release:	3
 
 Summary:	Partial dumping of data structures, optimized for argument
 License:	GPL+ or Artistic
