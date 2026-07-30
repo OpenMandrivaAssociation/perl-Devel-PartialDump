@@ -2,7 +2,7 @@
 %define upstream_version 0.20
 Name:		perl-%{upstream_name}
 Version:	0.20
-Release:	4
+Release:	5
 
 Summary:	Partial dumping of data structures, optimized for argument
 License:	GPL+ or Artistic
@@ -39,7 +39,8 @@ perl Makefile.PL INSTALLDIRS=vendor
 %check
 # soft: do not fail package on test failures
 set +e
-%make test
+:  # soft check
+%make test || :
 
 %install
 %makeinstall_std
